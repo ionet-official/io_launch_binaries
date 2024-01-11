@@ -73,14 +73,14 @@ This repository contains official binaries for the io.net - Follow the instructi
     ./launch_binary_mac
     ```
 
-### Windows
+<!-- ### Windows
 
 1. **Download binary**:
 - Go to your browser and paste:
   ```
   wget https://github.com/ionet-official/io_launch_binaries/raw/main/launch_binary_windows
   ```
-- Double-click on the downloaded file and fill out the details in interactive mode.
+- Double-click on the downloaded file and fill out the details in interactive mode. -->
 
 
 ## Support
