@@ -6,15 +6,12 @@ This repository contains official binaries for the io.net - Follow the instructi
 
 ### For Linux
 - Docker
-- Nvidia drivers (In case of GPU Worker)
-- Nvidia container toolkit (In case of GPU Worker)
+- Nvidia drivers (In case of GPU Worker) (running io-setup will automatically install this if needed)
+- Nvidia container toolkit (In case of GPU Worker) (running io-setup will automatically install this if needed)
 
-### For Mac and Windows
+### For Mac
 - Docker Desktop
   - [Download Docker Desktop for Mac](https://www.docker.com/products/docker-desktop/) - choose the mac - apple chip version for download
-  - [Download Docker Desktop for Windows](https://www.docker.com/products/docker-desktop/) - choose the Windows version for download
-
-- Nvidia Drivers (In case of GPU Worker on Windows) [Link](https://www.nvidia.com/download/index.aspx)
 
 ## Installation
 
