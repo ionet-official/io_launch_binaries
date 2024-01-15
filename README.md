@@ -18,31 +18,29 @@ This repository contains official binaries for the io.net - Follow the instructi
 ### Linux
 
 1. **Perform IO-Setup (one time for hardware)** (skip if docker and Nvidia drivers are already installed and configured)
-   - Install `wget`: 
-     ```
-     sudo apt install wget
-     ```
    - Download the setup script: 
      ```
-     wget https://github.com/ionet-official/io-net-official-setup-script/raw/main/ionet-setup.sh
+     curl -L https://github.com/ionet-official/io-net-official-setup-script/raw/main/ionet-setup.sh -o ionet-setup.sh
      ```
    - Run the script:
      ```
      chmod +x ionet-setup.sh && ./ionet-setup.sh
      ```
+    ##### Note - incase curl command fails: 
+    - Install `curl`: 
+         ```
+         sudo apt install curl
+         ```
 
 2. **For systems with GPUs**
    - Wait for a restart.
    - After restart, rerun the setup again with the command above.
 
 ### Start the containers using binary
-- Install `wget` (if you don't already have it): 
-     ```
-     sudo apt install wget
-     ```
+
 3. **Download and launch binary**:
     ```
-    wget https://github.com/ionet-official/io_launch_binaries/raw/main/launch_binary_linux
+    curl -L https://github.com/ionet-official/io_launch_binaries/raw/main/launch_binary_linux -o launch_binary_linux
     chmod +x launch_binary_linux
     ```
 
@@ -54,19 +52,9 @@ This repository contains official binaries for the io.net - Follow the instructi
 
 ### Mac
 
-1. **Install brew**:
+- **Download and launch binary**:
     ```
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    ```
-
-2. **Install wget**:
-    ```
-    brew install wget
-    ```
-
-3. **Download and launch binary**:
-    ```
-    wget https://github.com/ionet-official/io_launch_binaries/raw/main/launch_binary_mac
+    curl -L https://github.com/ionet-official/io_launch_binaries/raw/main/launch_binary_mac -o launch_binary_mac
     chmod +x launch_binary_mac
     ```
 
