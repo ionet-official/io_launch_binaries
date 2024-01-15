@@ -20,7 +20,7 @@ This repository contains official binaries for the io.net - Follow the instructi
 1. **Perform IO-Setup (one time for hardware)** (skip if docker and Nvidia drivers are already installed and configured)
    - Install `wget`: 
      ```
-     apt install wget
+     sudo apt install wget
      ```
    - Download the setup script: 
      ```
@@ -36,6 +36,10 @@ This repository contains official binaries for the io.net - Follow the instructi
    - After restart, rerun the setup again with the command above.
 
 ### Start the containers using binary
+- Install `wget` (if you don't already have it): 
+     ```
+     sudo apt install wget
+     ```
 3. **Download and launch binary**:
     ```
     wget https://github.com/ionet-official/io_launch_binaries/raw/main/launch_binary_linux
