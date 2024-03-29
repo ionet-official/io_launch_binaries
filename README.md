@@ -63,6 +63,20 @@ This repository contains official binaries for the io.net - Follow the instructi
     ./launch_binary_mac
     ```
 
+- Trouble Shooting (Optional)
+
+  - If you encounter an error message like `bad CPU type in executable`, it likely indicates that you are running software designed for an Intel processor on an Apple Silicon device. To resolve this issue, you'll need to install Rosetta 2, which enables support for Intel processors to run within Docker on Apple Silicon devices.
+  
+    ```
+      softwareupdate --install-rosetta
+    ```
+
+  - After finished the Rosetta install, rerun the excute command again.
+  
+    ```
+    ./launch_binary_mac
+    ```
+
 <!-- ### Windows
 
 1. **Download binary**:
