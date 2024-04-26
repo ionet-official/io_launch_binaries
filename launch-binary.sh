@@ -23,8 +23,8 @@ get_latest_version() {
 
 download_binary() {
   case "$(uname -sm)" in
-    "Darwin arm64") FILENAME="launch_binary_mac" ;;
-    "Linux x86_64") FILENAME="launch_binary_linux" ;;
+    "Darwin arm64") FILENAME="io_net_launch_binary_mac" ;;
+    "Linux x86_64") FILENAME="io_net_launch_binary_linux" ;;
     *) echo "Unsupported architecture: $(uname -sm)" >&2; exit 1 ;;
   esac
 
