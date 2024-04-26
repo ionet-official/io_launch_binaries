@@ -38,15 +38,17 @@ This repository contains official binaries for the io.net - Follow the instructi
 
 ### Start the containers using binary
 
+### Linux
+
 3. **Download and launch binary**:
     ```
-    curl -L https://github.com/ionet-official/io_launch_binaries/raw/main/launch_binary_linux -o launch_binary_linux
-    chmod +x launch_binary_linux
+    curl -L https://github.com/ionet-official/io_launch_binaries/raw/main/io_net_launch_binary_linux -o io_net_launch_binary_linux
+    chmod +x io_net_launch_binary_linux
     ```
 
 - Launch in interactive mode or copy the generated command from the website.
     ```
-    ./launch_binary_linux
+    ./io_net_launch_binary_linux
     ```
 
 
@@ -54,13 +56,13 @@ This repository contains official binaries for the io.net - Follow the instructi
 
 - **Download and launch binary**:
     ```
-    curl -L https://github.com/ionet-official/io_launch_binaries/raw/main/launch_binary_mac -o launch_binary_mac
-    chmod +x launch_binary_mac
+    curl -L https://github.com/ionet-official/io_launch_binaries/raw/main/io_net_launch_binary_mac -o io_net_launch_binary_mac
+    chmod +x io_net_launch_binary_mac
     ```
 
 - Launch in interactive mode or copy the generated command from the website.
     ```
-    ./launch_binary_mac
+    ./io_net_launch_binary_mac
     ```
 
 - Trouble Shooting (Optional)
@@ -74,17 +76,17 @@ This repository contains official binaries for the io.net - Follow the instructi
   - After finished the Rosetta install, rerun the excute command again.
   
     ```
-    ./launch_binary_mac
+    ./io_net_launch_binary_mac
     ```
 
-<!-- ### Windows
+### Windows
 
 1. **Download binary**:
 - Go to your browser and paste:
   ```
-  wget https://github.com/ionet-official/io_launch_binaries/raw/main/launch_binary_windows
+  wget https://github.com/ionet-official/io_launch_binaries/raw/main/io_net_launch_binary_windows.exe
   ```
-- Double-click on the downloaded file and fill out the details in interactive mode. -->
+- Open the downloaded file in the cmd and it will fill out the details in interactive mode.
 
 
 ## Support
