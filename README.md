@@ -84,7 +84,7 @@ This repository contains official binaries for the io.net - Follow the instructi
 1. **Download binary**:
 - Go to your browser and paste:
   ```
-  wget https://github.com/ionet-official/io_launch_binaries/raw/main/io_net_launch_binary_windows.exe
+  https://github.com/ionet-official/io_launch_binaries/raw/main/io_net_launch_binary_windows.exe
   ```
 - Open the downloaded file in the cmd and it will fill out the details in interactive mode.
 
