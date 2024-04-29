@@ -88,6 +88,24 @@ This repository contains official binaries for the io.net - Follow the instructi
   ```
 - Open the downloaded file in the cmd and it will fill out the details in interactive mode.
 
+## Usage
+1. **Interactive Mode**: When you run the binary with no additional arguments, it will prompt you to enter the necessary details.
+
+
+2. **Additional Arguments Mode**: You can also pass the arguments directly to the binary.
+    - [required] `--device_name`: (string) The name of the device.
+    - [required] `--device_id`: (string) The ID of the device.
+    - [optional] `--user_id`: (string) The ID of the user.
+    - [optional] `--operating_system`: (string) The operating system of the device.
+    - [optional] `--no_warnings`: (boolean) Disable warnings of deleting existing and running containers.
+    - [optional] `--no_cache`: (boolean) Disable loading arguments from in-disk cache of your device.
+    - [optional] `--token`: (string) User refresh token to enable silent authentication.
+- Example usage:
+    ```
+    ./io_net_launch_binary_linux --device_name=my_device --device_id=1234 --no_warnings=true --no_cache=true
+    ```
+
+- Note: The binary will cache the arguments on the disk for future use. If you DO NOT want to use cached arguments, you can pass the `--no_cache=true` argument.
 
 ## Support
 
