@@ -1,5 +1,7 @@
 # IO-Net Official Binaries
 
+##### Version: 2.0.4
+
 This repository contains official binaries for the io.net - Follow the instructions below to set up and run the binaries on your respective operating system.
 
 ## Prerequisites
@@ -100,12 +102,16 @@ This repository contains official binaries for the io.net - Follow the instructi
     - [optional] `--no_warnings`: (boolean) Disable warnings of deleting existing and running containers.
     - [optional] `--no_cache`: (boolean) Disable loading arguments from in-disk cache of your device.
     - [optional] `--token`: (string) User refresh token to enable silent authentication.
+    - [optional] `--disable_sleep_mode`: (boolean) Disable sleep mode for the device.
 - Example usage:
     ```
     ./io_net_launch_binary_linux --device_name=my_device --device_id=1234 --no_warnings=true --no_cache=true
     ```
 
+- Note: The binary application will wait until the IO Worker Containers are up and running.
 - Note: The binary will cache the arguments on the disk for future use. If you DO NOT want to use cached arguments, you can pass the `--no_cache=true` argument.
+- Note: If you want to disable warnings about deleting existing and running containers, you can pass the `--no_warnings=true` argument.
+- Note: If you want to disable sleep mode for the device, you can pass the `--disable_sleep_mode=true` argument.
 
 ## Support
 
