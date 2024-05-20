@@ -1,6 +1,7 @@
 # IO-Net Official Binaries
 
-##### Latest Version: 2.0.5
+##### Latest Version: 2.0.6
+##### Oldest Supported Version: 2.0.1 (versions older than this are deprecated)
 
 This repository contains official binaries for the io.net - Follow the instructions below to set up and run the binaries on your respective operating system.
 
@@ -13,30 +14,30 @@ This repository contains official binaries for the io.net - Follow the instructi
 
 ### For Mac
 - Docker Desktop
-  - [Download Docker Desktop for Mac](https://www.docker.com/products/docker-desktop/) - choose the mac - apple chip version for download
+    - [Download Docker Desktop for Mac](https://www.docker.com/products/docker-desktop/) - choose the mac - apple chip version for download
 
 ## Installation
 
 ### Linux
 
 1. **Perform IO-Setup (one time for hardware)** (skip if docker and Nvidia drivers are already installed and configured)
-   - Download the setup script: 
-     ```
-     curl -L https://github.com/ionet-official/io-net-official-setup-script/raw/main/ionet-setup.sh -o ionet-setup.sh
-     ```
-   - Run the script:
-     ```
-     chmod +x ionet-setup.sh && ./ionet-setup.sh
-     ```
-    ##### Note - incase curl command fails: 
-    - Install `curl`: 
+    - Download the setup script:
+      ```
+      curl -L https://github.com/ionet-official/io-net-official-setup-script/raw/main/ionet-setup.sh -o ionet-setup.sh
+      ```
+    - Run the script:
+      ```
+      chmod +x ionet-setup.sh && ./ionet-setup.sh
+      ```
+   ##### Note - incase curl command fails:
+    - Install `curl`:
          ```
          sudo apt install curl
          ```
 
 2. **For systems with GPUs**
-   - Wait for a restart.
-   - After restart, rerun the setup again with the command above.
+    - Wait for a restart.
+    - After restart, rerun the setup again with the command above.
 
 ### Start the containers using binary
 
@@ -69,17 +70,17 @@ This repository contains official binaries for the io.net - Follow the instructi
 
 - Trouble Shooting (Optional)
 
-  - If you encounter an error message like `bad CPU type in executable`, it likely indicates that you are running software designed for an Intel processor on an Apple Silicon device. To resolve this issue, you'll need to install Rosetta 2, which enables support for Intel processors to run within Docker on Apple Silicon devices.
-  
-    ```
-      softwareupdate --install-rosetta
-    ```
+    - If you encounter an error message like `bad CPU type in executable`, it likely indicates that you are running software designed for an Intel processor on an Apple Silicon device. To resolve this issue, you'll need to install Rosetta 2, which enables support for Intel processors to run within Docker on Apple Silicon devices.
 
-  - After finished the Rosetta install, rerun the excute command again.
-  
-    ```
-    ./io_net_launch_binary_mac
-    ```
+      ```
+        softwareupdate --install-rosetta
+      ```
+
+    - After finished the Rosetta install, rerun the excute command again.
+
+      ```
+      ./io_net_launch_binary_mac
+      ```
 
 ### Windows
 
@@ -101,7 +102,7 @@ This repository contains official binaries for the io.net - Follow the instructi
     - [optional] `--no_cache`: (boolean) Disable loading arguments from in-disk cache of your device.
     - [optional] `--token`: (string) User refresh token to enable silent authentication.
     - [optional] `--disable_sleep_mode`: (boolean) Disable sleep mode for the device.
-  
+
     - see `--help` for additional commands.
 - Example usage:
     ```
