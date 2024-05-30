@@ -1,0 +1,39 @@
+name: Send Release Notes to Discord
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  send-discord-message:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Debug - Check GITHUB_EVENT_PATH
+        run: cat $GITHUB_EVENT_PATH
+
+      - name: Send release notes to Discord
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          # Extract the release title, body, and URL from the event payload JSON file
+          RELEASE_TITLE=$(jq -r '.release.name' $GITHUB_EVENT_PATH)
+          RELEASE_NOTES=$(jq -r '.release.body' $GITHUB_EVENT_PATH)
+          RELEASE_URL=$(jq -r '.release.html_url' $GITHUB_EVENT_PATH)
+
+          # Debugging: Print the extracted values
+          echo "Release Title: $RELEASE_TITLE"
+          echo "Release Notes: $RELEASE_NOTES"
+          echo "Release URL: $RELEASE_URL"
+
+          # Create a simple JSON payload to send to Discord
+          PAYLOAD=$(jq -n --arg title "$RELEASE_TITLE" --arg notes "$RELEASE_NOTES" --arg url "$RELEASE_URL" '{content: "New Release: \($title)\n\n\($notes)\n\n[View Release](\($url))"}')
+
+          # Debugging: Print the payload
+          echo "Payload: $PAYLOAD"
+
+          # Send the payload to Discord using the webhook URL
+          curl -X POST -H "Content-Type: application/json" -d "$PAYLOAD" "$DISCORD_WEBHOOK_URL"
