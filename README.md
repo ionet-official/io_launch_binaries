@@ -29,7 +29,7 @@ This repository contains official binaries for the io.net - Follow the instructi
       ```
       chmod +x ionet-setup.sh && ./ionet-setup.sh
       ```
-   ##### Note - incase curl command fails:
+   ##### Note - In case curl command fails:
     - Install `curl`:
          ```
          sudo apt install curl
@@ -68,7 +68,7 @@ This repository contains official binaries for the io.net - Follow the instructi
     ./io_net_launch_binary_mac
     ```
 
-- Trouble Shooting (Optional)
+- Troubleshooting (Optional)
 
     - If you encounter an error message like `bad CPU type in executable`, it likely indicates that you are running software designed for an Intel processor on an Apple Silicon device. To resolve this issue, you'll need to install Rosetta 2, which enables support for Intel processors to run within Docker on Apple Silicon devices.
 
@@ -76,7 +76,7 @@ This repository contains official binaries for the io.net - Follow the instructi
         softwareupdate --install-rosetta
       ```
 
-    - After finished the Rosetta install, rerun the excute command again.
+    - After finishing the Rosetta install, rerun the execute command again.
 
       ```
       ./io_net_launch_binary_mac
