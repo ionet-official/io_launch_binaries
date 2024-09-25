@@ -102,6 +102,8 @@ This repository contains official binaries for the io.net - Follow the instructi
     - [optional] `--no_cache`: (boolean) Disable loading arguments from in-disk cache of your device.
     - [optional] `--token`: (string) User refresh token to enable silent authentication.
     - [optional] `--disable_sleep_mode`: (boolean) Disable sleep mode for the device.
+    - [optional] `--docker_username`: (string) Docker login for Docker Hub.
+    - [optional] `--docker_password`: (string) Docker password for Docker Hub.
 
     - see `--help` for additional commands.
 - Example usage:
