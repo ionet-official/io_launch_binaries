@@ -1,6 +1,6 @@
 # IO-Net Official Binaries
 
-##### Latest Version: 2.0.8
+##### Latest Version: 2.0.9
 ##### Oldest Supported Version: 2.0.8 (versions older than this are deprecated)
 
 This repository contains official binaries for the io.net - Follow the instructions below to set up and run the binaries on your respective operating system.
@@ -104,7 +104,8 @@ This repository contains official binaries for the io.net - Follow the instructi
     - [optional] `--disable_sleep_mode`: (boolean) Disable sleep mode for the device.
     - [optional] `--docker_username`: (string) Docker login for Docker Hub.
     - [optional] `--docker_password`: (string) Docker password for Docker Hub.
-
+    - [optional] `--ecc_enabled`: (boolean) keep the ECC mode enabled for the device.
+      
     - see `--help` for additional commands.
 - Example usage:
     ```
