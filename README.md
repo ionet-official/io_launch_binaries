@@ -1,7 +1,7 @@
 # IO-Net Official Binaries
 
-##### Latest Version: 2.0.9
-##### Oldest Supported Version: 2.0.8 (versions older than this are deprecated)
+##### Latest Version: 2.1.0
+##### Oldest Supported Version: 2.1.0 (versions older than this are deprecated)
 
 This repository contains official binaries for the io.net - Follow the instructions below to set up and run the binaries on your respective operating system.
 
