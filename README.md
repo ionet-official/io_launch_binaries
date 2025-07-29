@@ -1,123 +1,160 @@
-# IO-Net Official Binaries
+# 🚀 IO-Net Official Binaries  
 
-##### Latest Version: 2.1.0
-##### Oldest Supported Version: 2.1.0 (versions older than this are deprecated)
+[![GitHub Repo stars](https://img.shields.io/github/stars/ionet-official/io_launch_binaries?logo=github&color=yellow)](https://github.com/ionet-official/io_launch_binaries/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/ionet-official/io_launch_binaries?logo=github&color=blue)](https://github.com/ionet-official/io_launch_binaries/network/members)
+[![GitHub last commit](https://img.shields.io/github/last-commit/ionet-official/io_launch_binaries?logo=git)](https://github.com/ionet-official/io_launch_binaries/commits/main)
+[![Discord](https://img.shields.io/discord/924442927399313448?logo=discord&color=5865F2)](https://discord.gg/kqFzFK7fg2)
+[![Twitter](https://img.shields.io/twitter/follow/ionet_official?style=social)](https://x.com/ionet)
+[![Website](https://img.shields.io/badge/Website-io.net-blue?style=flat&logo=google-chrome)](https://io.net)
 
-This repository contains official binaries for the io.net - Follow the instructions below to set up and run the binaries on your respective operating system.
+##### **Latest Version:** `2.1.0`  
+##### **Oldest Supported Version:** `2.1.0` (versions older than this are deprecated)  
 
-## Prerequisites
+This repository contains the **official binaries for IO-Net**.  
+Follow the instructions below to **set up and run the binaries** on your respective operating system.
 
-### For Linux
-- Docker
-- Nvidia drivers (In case of GPU Worker) (running io-setup will automatically install this if needed)
-- Nvidia container toolkit (In case of GPU Worker) (running io-setup will automatically install this if needed)
+---
 
-### For Mac
-- Docker Desktop
-    - [Download Docker Desktop for Mac](https://www.docker.com/products/docker-desktop/) - choose the mac - apple chip version for download
+## ⚡ **Prerequisites**  
 
-## Installation
+### ✅ **Linux**
+- 🐳 **Docker**  
+- 🎮 **Nvidia drivers** (Required for GPU Workers, `io-setup` will install automatically if missing)  
+- 🔧 **Nvidia container toolkit** (Required for GPU Workers, `io-setup` will install automatically if missing)  
 
-### Linux
+### ✅ **Mac**
+- 🍏 **Docker Desktop**  
+  - [📥 Download Docker Desktop for Mac](https://www.docker.com/products/docker-desktop/)  
+  - Select the **Mac - Apple Chip version**  
 
-1. **Perform IO-Setup (one time for hardware)** (skip if docker and Nvidia drivers are already installed and configured)
-    - Download the setup script:
-      ```
-      curl -L https://github.com/ionet-official/io-net-official-setup-script/raw/main/ionet-setup.sh -o ionet-setup.sh
-      ```
-    - Run the script:
-      ```
-      chmod +x ionet-setup.sh && ./ionet-setup.sh
-      ```
-   ##### Note - in case curl command fails:
-    - Install `curl`:
-         ```
-         sudo apt install curl
-         ```
+---
 
-2. **For systems with GPUs**
-    - Wait for a restart.
-    - After restart, rerun the setup again with the command above.
+## 🛠 **Installation**  
 
-### Start the containers using binary
+### **Linux Setup**  
 
-### Linux
+📌 **Step 1: Perform IO-Setup (one-time hardware setup)**  
+_Skip this if Docker and Nvidia drivers are already installed._  
 
-3. **Download and launch binary**:
-    ```
-    curl -L https://github.com/ionet-official/io_launch_binaries/raw/main/io_net_launch_binary_linux -o io_net_launch_binary_linux
-    chmod +x io_net_launch_binary_linux
-    ```
+📥 **Download the setup script:**  
 
-- Launch in interactive mode or copy the generated command from the website.
-    ```
-    ./io_net_launch_binary_linux
-    ```
+```bash
+curl -L https://github.com/ionet-official/io-net-official-setup-script/raw/main/ionet-setup.sh -o ionet-setup.sh  
+```
+
+⚙️ **Run the script:**  
+
+```bash
+chmod +x ionet-setup.sh && ./ionet-setup.sh  
+```
+
+❗ **If `curl` fails, install it manually:**  
+
+```bash
+sudo apt install curl  
+```
+
+🔁 **Step 2: GPU Systems**  
+- 🔄 Restart your machine.  
+- 🔧 After restart, **rerun the setup script** as shown above.  
+
+---
+
+## 🚀 **Downloading & Launching Binary**  
+
+### **Linux**  
+📥 **Download binary:**  
+
+```bash
+curl -L https://github.com/ionet-official/io_launch_binaries/raw/main/io_net_launch_binary_linux -o io_net_launch_binary_linux  
+```
+
+```bash
+chmod +x io_net_launch_binary_linux  
+```
+
+🎬 **Run in interactive mode:**  
+
+```bash
+./io_net_launch_binary_linux  
+```
+
+### **Mac**  
+📥 **Download binary:**  
+
+```bash
+curl -L https://github.com/ionet-official/io_launch_binaries/raw/main/io_net_launch_binary_mac -o io_net_launch_binary_mac  
+```
+
+```bash
+chmod +x io_net_launch_binary_mac  
+```
+
+🎬 **Run in interactive mode:**  
+
+```bash
+ ./io_net_launch_binary_mac  
+```
+
+🔧 **Troubleshooting (Optional):**  
+- ❗ If you see `bad CPU type in executable`, it means **you're running an Intel binary on Apple Silicon**.  
+- 🛠️ Install **Rosetta 2** to enable compatibility:
+  
+```bash
+softwareupdate --install-rosetta
+```
+
+- 🔄 After installation, rerun:
+
+```bash 
+./io_net_launch_binary_mac  
+```
+### **Windows**  
+📥 **Download binary:**  
+🔗 Open your browser and visit: **[Click here to download](https://github.com/ionet-official/io_launch_binaries/raw/main/io_net_launch_binary_windows.exe)**  
 
 
-### Mac
+🖥 **Run the downloaded file** in CMD. It will launch in **interactive mode**.
 
-- **Download and launch binary**:
-    ```
-    curl -L https://github.com/ionet-official/io_launch_binaries/raw/main/io_net_launch_binary_mac -o io_net_launch_binary_mac
-    chmod +x io_net_launch_binary_mac
-    ```
+---
 
-- Launch in interactive mode or copy the generated command from the website.
-    ```
-    ./io_net_launch_binary_mac
-    ```
+## 🖥 **Usage**  
 
-- Troubleshooting (Optional)
+### 🔹 **Interactive Mode**  
+💡 Run the binary **without arguments** to get prompted for input.  
 
-    - If you encounter an error message like `bad CPU type in executable`, it likely indicates that you are running software designed for an Intel processor on an Apple Silicon device. To resolve this issue, you'll need to install Rosetta 2, which enables support for Intel processors to run within Docker on Apple Silicon devices.
+### 🔹 **Command-line Arguments**  
+| Argument               | Type     | Description  |
+|------------------------|----------|-------------|
+| **`--device_name`**    | `string` | (Required) Name of the device |
+| **`--device_id`**      | `string` | (Required) Device ID |
+| **`--no_warnings`**    | `boolean` | Disable warnings for deleting existing/running containers |
+| **`--no_cache`**       | `boolean` | Disable loading arguments from in-disk cache |
+| **`--token`**         | `string` | User refresh token to enable silent authentication |
+| **`--disable_sleep_mode`** | `boolean` | Disable sleep mode for the device |
+| **`--docker_username`** | `string` | Docker login for Docker Hub |
+| **`--docker_password`** | `string` | Docker password for Docker Hub |
+| **`--ecc_enabled`**   | `boolean` | Keep ECC mode enabled for the device |
 
-      ```
-        softwareupdate --install-rosetta
-      ```
+🛠 **Example usage:**  
 
-    - After finishing the Rosetta install, rerun the execute command again.
+```bash
+./io_net_launch_binary_linux --device_name=my_device --device_id=1234 --no_warnings=true --no_cache=true  
+```
+---
 
-      ```
-      ./io_net_launch_binary_mac
-      ```
+## 🆘 **Support**  
 
-### Windows
+For support, please **open an issue** or join our **community**:  
 
-1. **Download binary**:
-- Go to your browser and paste:
-  ```
-  https://github.com/ionet-official/io_launch_binaries/raw/main/io_net_launch_binary_windows.exe
-  ```
-- Open the downloaded file in the cmd and it will fill out the details in interactive mode.
-
-## Usage
-1. **Interactive Mode**: When you run the binary with no additional arguments, it will prompt you to enter the necessary details.
-
-
-2. **Additional Arguments Mode**: You can also pass the arguments directly to the binary.
-    - [required] `--device_name`: (string) The name of the device.
-    - [required] `--device_id`: (string) The ID of the device.
-    - [optional] `--no_warnings`: (boolean) Disable warnings of deleting existing and running containers.
-    - [optional] `--no_cache`: (boolean) Disable loading arguments from in-disk cache of your device.
-    - [optional] `--token`: (string) User refresh token to enable silent authentication.
-    - [optional] `--disable_sleep_mode`: (boolean) Disable sleep mode for the device.
-    - [optional] `--docker_username`: (string) Docker login for Docker Hub.
-    - [optional] `--docker_password`: (string) Docker password for Docker Hub.
-    - [optional] `--ecc_enabled`: (boolean) keep the ECC mode enabled for the device.
-      
-    - see `--help` for additional commands.
-- Example usage:
-    ```
-    ./io_net_launch_binary_linux --device_name=my_device --device_id=1234 --no_warnings=true --no_cache=true
-    ```
-
-- Note: The binary application will wait until the IO Worker Containers are up and running.
-- Note: After one successful sign-in, the auth token will be saved in cache file. To re-authenticate use `--no_cache=true` flag.
-- Note: The binary will cache the arguments on the disk for future use. If you DO NOT want to use cached arguments, you can pass the `--no_cache=true` argument.
-- Note: If you want to disable warnings about deleting existing and running containers, you can pass the `--no_warnings=true` argument.
-- Note: If you want to disable sleep mode for the device, you can pass the `--disable_sleep_mode=true` argument.
-
-## Support
-
-For support, please open an issue or contact our support team on [discord](https://discord.gg/kqFzFK7fg2)
+<p align="center">
+  <a href="https://t.me/ionet_official">
+    <img src="https://img.shields.io/badge/Telegram-26A5E4?logo=telegram&logoColor=white&style=for-the-badge" alt="Telegram">
+  </a>
+  <a href="https://discord.gg/kqFzFK7fg2">
+    <img src="https://img.shields.io/badge/Discord-5865F2?logo=discord&logoColor=white&style=for-the-badge" alt="Discord">
+  </a>
+  <a href="https://x.com/ionet">
+    <img src="https://img.shields.io/badge/Twitter-000000?logo=x&logoColor=white&style=for-the-badge" alt="Twitter (X)">
+  </a>
+</p>
